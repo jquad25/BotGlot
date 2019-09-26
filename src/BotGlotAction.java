@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -29,11 +30,19 @@ public class BotGlotAction {
     ArrayList<Status> tweetAlreadyused; //need this?
     ArrayList<Status> tweets;
 
+    //Account settings - see other class
 
 
     //Need to search for desired users
 
     //Need to to follow desired users
+    getId(); //long
+    getName(); //String
+    getScreenName(); //String
+    createFriendship(java.lang.String screenName, boolean follow)
+    isFollowing(); //boolean
+    isFollowedBy(); //boolean
+
 
     //Need to retweet content of desired users into bot's TL
     /*
@@ -42,7 +51,7 @@ public class BotGlotAction {
 
         //Works but tries to retweet some Tweets twice. Checking...
 
-    public void searchTweetandRetweet(String hashtag) {
+    public void searchTweetandRetweet(String hashtag) { //instead of String hashtag need String username?
         Query query = new Query(hashtag);
         query.count(40);
         int check = 0;
