@@ -21,14 +21,13 @@ import twitter4j.TwitterFactory;
 
 public class BotGlotAccountSettings {
 
-    //Do not allow DMs
-    getAllowDmsFrom();
+    Twitter twitterSettings = new Twitter();
 
     //Twitter UI language for user - English (US)
     getLanguage();
 
     //screen name = BotGlot
-    getScreenName();
+    twitterSettings.getScreenName(en);
 
     //get timezone
     getTimeZone();
