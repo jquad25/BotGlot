@@ -10,24 +10,20 @@ import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.lang.String;
-import twitter4j.IDs;
-import twitter4j.Query;
-import twitter4j.QueryResult;
-import twitter4j.Status;
-import twitter4j.Twitter;
-import twitter4j.TwitterException;
-import twitter4j.TwitterFactory;
+import twitter4j.*;
+
+/**
+ *
+ * @author Ursula Jordan Aquadro
+ */
 
 
-public class BotGlotAccountSettings {
+public class BotGlotAccountSettings extends AccountSettings {
 
-    Twitter twitterSettings = new Twitter();
+    BotGlotAccountSettings  twitterSettings = new BotGlotAccountSettings();
 
     //Twitter UI language for user - English (US)
-    getLanguage();
-
-    //screen name = BotGlot
-    twitterSettings.getScreenName(en);
+    twitterSettings.getLanguage(en);
 
     //get timezone
     getTimeZone();
