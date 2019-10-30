@@ -29,6 +29,7 @@ public class BotGlotTwitterBase extends TwitterBase {
     //return authenticating user's user id
     //may interally call verifyCredentials() - look into this
     Long botglotUserId;
+    botBase.getId();
 
     //check TwitterBase interface for other needed methods
 
