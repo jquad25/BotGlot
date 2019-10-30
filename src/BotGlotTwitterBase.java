@@ -26,7 +26,21 @@ public class BotGlotTwitterBase extends TwitterBase {
     String screenName = "BotGlot";
     botBase.getScreenName(screenName);
 
+    //return authenticating user's user id
+    //may interally call verifyCredentials() - look into this
+    Long botglotUserId;
+
     //check TwitterBase interface for other needed methods
+
+    /*getAuthorization() comes from Authorization which is an interface
+    do I need to create a new class just for authorization?
+     */
+
+    /*getConfiguration() comes from the Configuration interface
+    so same question - do I need to create a new class just for that?
+    I'd like to have some subclasses in here that implement those interfaces
+    instead of making separate classes for them
+     */
 
 
 }
